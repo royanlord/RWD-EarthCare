@@ -1,10 +1,46 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+}
+
+.title-login {
+     text-transform: uppercase;
+     font-weight: 600;
+}
+
 body {
      background: #115810;
+     font-family: "Inter", sans-serif;
 }
 
 .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 70%;
      background: #FFFFFF;
      padding: 3rem;
      border-radius: 20px;
+}
+
+div > .btn-green {
+     background: #34b632;
+     border-color: #34b632;
+}
+
+div > .btn-green:hover {
+     background: #115810;
+     border-color: #115810;
+}
+
+@media(max-width: 440px) {
+     .container {
+          max-width: 90%;
+     }
 }
 
