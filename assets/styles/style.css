@@ -18,3 +18,9 @@ header .bg-dark, .dropdown-menu {
 .navbar .btn:active {
     background-color: #CE3B01 !important;
 }
+
+#jumbotron-contact > div {
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/contact-jumbotron.svg") !important;
+    background-size: cover;
+}
