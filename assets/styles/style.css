@@ -5,3 +5,7 @@
 .title {
     color: #E54201;
 }
+
+.wrapper img {
+    height: 200px;
+}
