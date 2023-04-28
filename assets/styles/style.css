@@ -1,0 +1,9 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item img {
+    width: auto;
+    height: 550px;
+    object-fit: cover;
+}
