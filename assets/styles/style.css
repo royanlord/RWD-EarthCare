@@ -11,3 +11,21 @@
 .card {
     background-color: #F0F0F0;
 }
+
+.wrapper-article {
+    padding: 2rem 4rem;
+}
+
+.left-article {
+    height: 97.7%;
+    background-color: #fff;
+}
+
+.right-article {
+    background-color: #fff;
+}
+
+.right-article img {
+    height: 12.75rem;
+    object-fit: cover;
+}
