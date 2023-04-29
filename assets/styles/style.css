@@ -29,3 +29,43 @@ header .bg-dark, .dropdown-menu {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/contact-jumbotron.svg") !important;
     background-size: cover;
 }
+
+#content-form {
+    margin-bottom: 10vh;
+}
+
+#content-form > div {
+    width: 85vw;
+    height: auto;
+    background-color: #115810 !important;
+}
+
+#content-form #hear {
+    color: rgba(243, 107, 53, 1);
+}
+
+#content-form .btn-primary {
+    background-color: #E54201;
+}
+
+#content-form .btn:hover {
+    background-color: #F36B35 !important;
+}
+
+#content-form .btn:active {
+    background-color: #CE3B01 !important;
+}
+
+@media screen and (max-width: 992px) {
+    #content-form > .rounded-5 {
+        border-radius: 20px !important;
+    }
+
+    #content-form form {
+        margin: 0 15px;
+    }
+
+    #content-form input, textarea, button {
+        font-size: 15px !important;
+    }
+}
