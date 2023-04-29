@@ -56,6 +56,19 @@ header .bg-dark, .dropdown-menu {
     background-color: #CE3B01 !important;
 }
 
+footer {
+    background-color: #115810;
+    height: 40vh;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer > .container-fluid {
+    width: 80vw !important;
+}
+
 @media screen and (max-width: 992px) {
     #content-form > .rounded-5 {
         border-radius: 20px !important;
@@ -67,5 +80,9 @@ header .bg-dark, .dropdown-menu {
 
     #content-form input, textarea, button {
         font-size: 15px !important;
+    }
+
+    footer {
+        height: auto;
     }
 }
