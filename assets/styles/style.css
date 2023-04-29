@@ -1,0 +1,38 @@
+body {
+     font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+     background: #115810;
+     /* padding: 0.8rem; */
+}
+
+.btn-login {
+     background: #E54201;
+     border-color: #E54201;
+     font-weight: 600;
+}
+
+main .text-event {
+     margin-top: 6rem;
+}
+
+.container .card {
+     width: 22rem;
+     /* margin: 0 auto; */
+}
+
+.btn-login:hover {
+     background: #F36B35;
+     border-color: #F36B35;
+}
+
+.container .card-title {
+     font-weight: 600;
+}
+
+@media (max-width: 576px) {
+     .container .card {
+          margin: 1rem auto;
+     }
+}
