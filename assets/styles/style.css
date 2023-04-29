@@ -6,6 +6,10 @@
     color: #E54201;
 }
 
+.wrapper {
+    background-color: #115810;
+}
+
 .wrapper img {
     height: 200px;
 }
