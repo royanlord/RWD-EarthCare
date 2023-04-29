@@ -32,6 +32,11 @@ main .text-event {
 }
 
 @media (max-width: 576px) {
+     .btn-login {
+          margin-top: 1rem;
+          min-width: 25%;
+     }
+
      .container .card {
           margin: 1rem auto;
      }
