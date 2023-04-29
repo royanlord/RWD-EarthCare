@@ -10,7 +10,7 @@ a {
 
 .title-login {
      text-transform: uppercase;
-     font-weight: 600;
+     font-weight: 700;
 }
 
 body {
@@ -38,9 +38,25 @@ div > .btn-green:hover {
      border-color: #115810;
 }
 
-@media(max-width: 440px) {
+.text-register,
+.text-forgot {
+     color: #0093ED !important;
+}
+
+@media(max-width: 576px) {
      .container {
           max-width: 90%;
+     }
+
+     input {
+          font-size: 1rem !important;
+          max-width: 100% !important;
+     }
+
+     .text-register {
+          display: flex;
+          justify-content: center;
+          align-items: center;
      }
 }
 
