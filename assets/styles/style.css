@@ -19,6 +19,9 @@ main .text-event {
 
 .container .card {
      width: 22rem;
+     box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
+     -webkit-box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
+     -moz-box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
      /* margin: 0 auto; */
 }
 
@@ -30,6 +33,18 @@ main .text-event {
 .container .card-title {
      font-weight: 600;
 }
+
+.btn-join-event {
+     background: #E54201;
+     border-color: #E54201;
+     font-weight: 600;
+}
+
+.btn-join-event:hover {
+     background: #F36B35;
+     border-color: #F36B35;
+}
+
 
 @media (max-width: 576px) {
      .btn-login {
