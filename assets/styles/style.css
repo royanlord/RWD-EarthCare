@@ -13,3 +13,22 @@
 .team {
     margin: 1rem 0 0 0;
 }
+
+footer {
+    background-color: #115810;
+    height: 40vh;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer>.container-fluid {
+    width: 80vw !important;
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        height: auto;
+    }
+}
