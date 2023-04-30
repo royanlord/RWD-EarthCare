@@ -21,7 +21,7 @@ body {
 }
 
 main .text-event {
-     margin-top: 6rem;
+     margin-top: 8rem;
 }
 
 .container .card {
@@ -51,26 +51,6 @@ main .text-event {
      background: #F36B35;
      border-color: #F36B35;
 }
-
-footer {
-    background-color: #115810;
-    height: 41vh;
-}
-
-footer li {
-    list-style-type: none;
-}
-
-footer > .container-fluid {
-    width: 80vw !important;
-}
-
-@media (max-width: 992px) {
-     footer {
-          height: auto;
-     }
-}
-
 
 @media (max-width: 576px) {
      .btn-login {
