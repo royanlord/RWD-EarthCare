@@ -39,6 +39,7 @@
 .btn-event {
     background-color: #E54201;
     color: #fff;
+    border: none;
 }
 
 .btn-event:hover {
@@ -64,6 +65,7 @@
 }
 
 .btn-showall-event:active {
+    border: 2px solid #CE3B01 !important;
     background-color: #CE3B01 !important;
     color: #fff !important;
 }
@@ -75,6 +77,46 @@
 
 .wrapper-article {
     padding: 2rem 0;
+    background-color: #115810;
+    color: #fff;
+}
+
+.btn-article a {
+    background-color: #115810;
+    color: #fff;
+    border: none;
+}
+
+.btn-article a:hover {
+    background-color: #56C054;
+    color: #fff;
+}
+
+.btn-article a:active {
+    background-color: #094508 !important;
+    color: #fff !important;
+}
+
+.btn-showall-article {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-showall-article:hover {
+    background-color: #E54201;
+    color: #fff;
+}
+
+.btn-showall-article:active {
+    border: 2px solid #CE3B01 !important;
+    background-color: #CE3B01 !important;
+    color: #fff !important;
+    border: none;
+}
+
+.card-body h5{
+    font-weight: bold;
 }
 
 .left-article {
