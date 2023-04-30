@@ -12,6 +12,18 @@
     object-fit: cover;
 }
 
+.btn-carousel {
+    background-color: #115810;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 24px;
+}
+
+.btn-carousel:hover {
+    background-color: #56C054;
+}
+
 .card-event{
     background-color: #F0F0F0;
 }
