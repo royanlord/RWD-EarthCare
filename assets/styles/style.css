@@ -56,6 +56,10 @@ header .bg-dark, .dropdown-menu {
     background-color: #CE3B01 !important;
 }
 
+#invalid-email, #invalid-fullname, #invalid-message {
+    font-size: 0.8rem;
+}
+
 footer {
     background-color: #115810;
     height: 40vh;
