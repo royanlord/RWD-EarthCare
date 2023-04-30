@@ -120,7 +120,7 @@
 }
 
 .left-article {
-    height: 91.3vh;
+    height: 89.8vh;
 }
 
 .left-article img {
@@ -194,20 +194,20 @@ footer>.container-fluid {
     footer {
         height: auto;
     }
-
-    .mid-article, .mid-event {
-        margin: 20px 0;
-    }
     
 }
 
 @media screen and (max-width: 576px) {
     .left-article img{
-        height: 40%;
+        height: 300px;
     }
 
     .left-article {
         height: auto;
+    }
+
+    .mid-article, .mid-event {
+        margin: 20px 0;
     }
     
 }
