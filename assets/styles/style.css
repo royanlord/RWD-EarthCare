@@ -24,8 +24,53 @@
     background-color: #56C054;
 }
 
+.btn-carousel:active {
+    background-color: #094508 !important;
+}
+
+.carousel-indicators .active {
+    background-color: #E54201;
+}
+
 .card-event{
     background-color: #F0F0F0;
+}
+
+.btn-event {
+    background-color: #E54201;
+    color: #fff;
+}
+
+.btn-event:hover {
+    background-color: #F36B35;
+    color: #fff;
+}
+
+.btn-event:active {
+    background-color: #CE3B01 !important;
+    color: #fff !important;
+}
+
+.btn-showall-event {
+    border: 2px solid #E54201;
+    background-color: transparent;
+    color: #E54201;
+    font-weight: 500;
+}
+
+.btn-showall-event:hover {
+    background-color: #F36B35;
+    color: #fff;
+}
+
+.btn-showall-event:active {
+    background-color: #CE3B01 !important;
+    color: #fff !important;
+}
+
+
+.fa-calendar-days, .fa-location-dot {
+    color: #E54201;
 }
 
 .wrapper-article {
