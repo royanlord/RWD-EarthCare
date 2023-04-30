@@ -12,6 +12,10 @@
     object-fit: cover;
 }
 
+.wrapper-carousel {
+    width: 40%;
+}
+
 .btn-carousel {
     background-color: #115810;
     color: #fff;
@@ -194,10 +198,11 @@ footer>.container-fluid {
     footer {
         height: auto;
     }
-    
-}
 
-@media screen and (max-width: 576px) {
+    .wrapper-carousel {
+        width: 80%;
+    }
+
     .left-article img{
         height: 300px;
     }
