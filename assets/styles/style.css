@@ -52,6 +52,16 @@ main .text-event {
      border-color: #F36B35;
 }
 
+#output {
+     /* max-width: 100%; */
+     display: flex;
+     gap: 10px;
+     /* flex-direction: column; */
+     justify-content: space-between;
+     align-items: center;
+     /* flex-wrap: wrap; */
+}
+
 @media (max-width: 576px) {
      .btn-login {
           margin-top: 1rem;
