@@ -125,11 +125,11 @@
 }
 
 .left-article {
-    height: 89.8vh;
+    height: 606px;
 }
 
 .left-article img {
-    height: 50%;
+    height: 100%;
     object-fit: cover;
 }
 
