@@ -50,6 +50,22 @@ footer > .container-fluid {
 }
 
 @media screen and (max-width: 992px) {
+    #article-detail #main-article {
+        width: 100% !important;
+    }
+
+    #article-detail h2 {
+        font-size: 1.1rem;
+    }
+
+    #article-detail .date-article {
+        font-size: 0.8rem;
+    }
+
+    #article-detail p {
+        font-size: 12px;
+    }
+
     footer {
         height: auto;
     }
