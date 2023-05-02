@@ -2,7 +2,15 @@ let urlDua = `https://644e5c2c4e86e9a4d8f6d279.mockapi.io/detail`
 let detail = document.getElementById("detail")
 let id = Number.parseInt((new Map(location.search.replace("?", "").split("&").map(e => e.split("=")))).get("id"))??0
 if (id == 0 || Number.isNaN(id)) {
-    detail.innerText = "data kosong"
+    // detail.innerText = "data kosong"
+    detail.innerHTML = `
+        <div class="row d-flex justify-content-center">
+            <lottie-player src='https://assets8.lottiefiles.com/packages/lf20_a3kesdek.json' background='transparent' speed='1' style='width: 550px; height: 550px;' loop autoplay></lottie-player>
+            <h2 class="fw-semibold text-center" style="margin-top: -80px; z-index: 1">Sorry, Page Not Found</h2>
+            <div class="col-12 d-flex justify-content-center">
+            </div>
+        </div>
+    `
 } else {
     fetch(urlDua)
     .then(response => response.json())
