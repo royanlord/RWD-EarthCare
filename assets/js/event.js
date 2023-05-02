@@ -12,13 +12,14 @@ function apiEvent() {
                return res.json()
           })
           .then(function (data) {
-               let output = '';
+               let output = ''
 
                data.forEach(function (el) {
                     output += `
-                    <div class="col">
+               <div class="row">
+                    <div class="col-md-4">
                          <div class="card">
-                              <img src="assets/images/peran mahasiswa.svg" class="card-img-top" alt="ilustrasi banjir">
+                              <img src="${el.gambar}" alt="${el.alt}">
                               <div class="card-body">
                                    <h5 class="card-title">${el.judul}</h5>
                                    <p class="card-text mb-3">${el.pembuat}</p>
@@ -36,9 +37,10 @@ function apiEvent() {
                               </div>
                          </div>
                     </div>
+               </div>
                `
                })
-               document.getElementById('output').innerHTML = output;
+               document.getElementById('output').innerHTML = output
           })
           .catch(function (err) {
                console.log(err)
