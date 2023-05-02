@@ -25,6 +25,7 @@ main .text-event {
 }
 
 .container .card {
+     margin-top: 1.5rem;
      width: 22rem;
      box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
      -webkit-box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
@@ -53,13 +54,13 @@ main .text-event {
 }
 
 #output {
-     /* max-width: 100%; */
+     /* max-width: 90%; */
      display: flex;
-     gap: 10px;
-     /* flex-direction: column; */
-     justify-content: space-between;
+     row-gap: 25px;
+     column-gap: 25px;
+     justify-content: center;
      align-items: center;
-     /* flex-wrap: wrap; */
+     flex-wrap: wrap;
 }
 
 @media (max-width: 576px) {
@@ -70,5 +71,7 @@ main .text-event {
 
      .container .card {
           margin: 1rem auto;
+          display: flex;
+          row-gap: 10px !important;
      }
 }
