@@ -1,9 +1,9 @@
 let articles = document.getElementById("article-content")
+let url = 'https://644e5c2c4e86e9a4d8f6d279.mockapi.io/article'
 
-fetch('https://644e5c2c4e86e9a4d8f6d279.mockapi.io/article')
+fetch(url)
     .then(response => response.json())
     .then((response) => {
-        // let data = response.response[0]
         response.map((data) => {
             articles.innerHTML += `
                 <div class="row mx-3 mb-4">
@@ -18,14 +18,13 @@ fetch('https://644e5c2c4e86e9a4d8f6d279.mockapi.io/article')
                             <p class="d-inline text-muted ms-1">${data.datePost}</p>
                         </div>
                         <div class="button-more">
-                            <a href="#" class="btn btn-primary border-0 px-3 py-2">Selengkapnya</a>
+                            <a href="detailArticle.html?id=${data.id}" class="btn btn-primary border-0 px-3 py-2" id="btnSelengkapnya">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
             `
         }).join('')
-        console.log(response)
-
+        // console.log(response)
     })
     .catch(err => {
         console.log(err)
