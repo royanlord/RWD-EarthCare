@@ -1,6 +1,6 @@
 let inputEmail = document.getElementById("email")
 let inputFullname = document.getElementById("fullname")
-let inputMessage = document.getElementById("email")
+let inputMessage = document.getElementById("message")
 let btnSend = document.getElementById("btnSend")
 
 const validateForm = () => {
@@ -9,7 +9,16 @@ const validateForm = () => {
     let message = inputMessage.value
 
     if (email !== "" && fullname !== "" && message !== "") {
-
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Message sent successfully',
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          document.getElementById("invalid-email").innerHTML = ""
+          document.getElementById("invalid-fullname").innerHTML = ""
+          document.getElementById("invalid-message").innerHTML = ""
     } else {
         if (email === "") {
             document.getElementById("invalid-email").innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Email can't be empty`
