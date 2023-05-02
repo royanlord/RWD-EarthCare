@@ -1,11 +1,3 @@
-// const api_event = 'https://644dfece4e86e9a4d8ef004c.mockapi.io/events/1'
-
-// fetch(api_event)
-//      .then(res => res.json())
-//      .then(value => {
-//           console.log(value)
-//      })
-
 function apiEvent() {
      fetch('https://644dfece4e86e9a4d8ef004c.mockapi.io/events')
           .then(function (res) {
@@ -32,7 +24,7 @@ function apiEvent() {
                                         <p class="d-inline text-muted ms-1">${el.lokasi}</p>
                                    </div>
                                    <div class="d-grid">
-                                        <a href="#" class="btn btn-primary btn-join-event mt-4">Join Now</a>
+                                        <a href="./detail-event.html?id=${el.id}" class="btn btn-primary btn-join-event mt-4">Join Now</a>
                                    </div>
                               </div>
                          </div>
