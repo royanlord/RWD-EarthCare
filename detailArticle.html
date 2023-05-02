@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header" class="d-none">
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container">
               <a class="navbar-brand text-white" href="#">
@@ -59,7 +59,14 @@
           </nav>
     </header>
 
-    <main>
+    <div class="container" id="loading">
+      <div class="row d-flex justify-content-center">
+        <!-- <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kn98xjf0.json" background="transparent" speed="1" style="width: 550px; height: 550px;" loop autoplay></lottie-player> -->
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_pvjwvcvn.json"  background="transparent"  speed="1.5"  style="width: 550px; height: 550px;"  loop  autoplay></lottie-player>
+      </div>
+    </div>
+
+    <main id="detail-atc" class="d-none">
         <section id="article-detail">
             <div class="container-fluid" id="detail">
                 <!-- <div class="row mt-4 mx-4">
@@ -105,7 +112,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer" class="d-none">
         <div class="container-fluid mt-4">
           <div class="row py-5 mx-lg-4 text-white d-flex justify-content-center">
             <div class="col-lg-3 pt-sm-0 pt-md-0 pt-lg-4">
