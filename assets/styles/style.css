@@ -66,6 +66,11 @@ main .text-event {
      flex-wrap: wrap;
 }
 
+/* Styling Detail Event */
+#detail-event {
+     margin-top: 5rem;
+}
+
 @media (max-width: 576px) {
      .btn-login {
           margin-top: 1rem;
