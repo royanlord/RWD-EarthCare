@@ -7,6 +7,11 @@ body {
      padding: 1rem;
 }
 
+.navbar-brand {
+     font-size: 24px;
+     font-weight: 700;
+}
+
 .logo-img {
      display: inline-block;
      width: 50px;
@@ -25,12 +30,11 @@ main .text-event {
 }
 
 .container .card {
-     margin-top: 1.5rem;
+     margin-top: 1rem;
      width: 22rem;
      box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
      -webkit-box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
      -moz-box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
-     /* margin: 0 auto; */
 }
 
 .btn-login:hover {
@@ -54,7 +58,6 @@ main .text-event {
 }
 
 #output {
-     /* max-width: 90%; */
      display: flex;
      row-gap: 25px;
      column-gap: 25px;
