@@ -223,6 +223,14 @@ footer>.container-fluid {
         height: auto;
     }
 
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer .fs-6 {
+        font-size: 1.5rem;
+    }
+
     .wrapper-carousel {
         width: 80%;
     }
