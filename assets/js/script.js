@@ -19,6 +19,7 @@ const validateForm = () => {
           document.getElementById("invalid-email").innerHTML = ""
           document.getElementById("invalid-fullname").innerHTML = ""
           document.getElementById("invalid-message").innerHTML = ""
+          document.getElementsByName("contact-form")[0].reset()
     } else {
         if (email === "") {
             document.getElementById("invalid-email").innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Email can't be empty`
