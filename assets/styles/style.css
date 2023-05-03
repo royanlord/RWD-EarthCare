@@ -1,85 +1,213 @@
 body {
-     font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar {
-     background: #115810;
-     padding: 1rem;
+  background: #115810;
+  padding: 1rem;
 }
 
 .navbar-brand {
-     font-size: 24px;
-     font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .logo-img {
-     display: inline-block;
-     width: 50px;
-     height: 50px;
-     margin-top: -1rem;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: -1rem;
 }
 
-.btn-login {
-     background: #E54201;
-     border-color: #E54201;
-     font-weight: 600;
+/* navbar .btn-login {
+  background: #e54201;
+  border-color: #e54201;
+  color: #fff;
+  font-weight: 600;
+} */
+
+navbar .btn-primary {
+  background: #e54201 !important;
+}
+
+navbar .btn-login:hover {
+  background: #f36b35 !important;
+}
+
+navbar .btn-login:active {
+  background: #ce3b01 !important;
 }
 
 main .text-event {
-     margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 .container .card {
-     margin-top: 1rem;
-     width: 22rem;
-     box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
-     -webkit-box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
-     -moz-box-shadow: 8px 9px 18px -7px rgba(135,135,135,0.75);
+  margin-top: 1rem;
+  box-shadow: 8px 9px 18px -7px rgba(135, 135, 135, 0.75);
+  -webkit-box-shadow: 8px 9px 18px -7px rgba(135, 135, 135, 0.75);
+  -moz-box-shadow: 8px 9px 18px -7px rgba(135, 135, 135, 0.75);
+  width: 22rem;
+  max-height: 28rem;
 }
 
-.btn-login:hover {
-     background: #F36B35;
-     border-color: #F36B35;
+.btn-primary {
+  background: #e54201 !important;
+  border: none;
+  transition: 0.3s linear;
+}
+
+.btn-primary:hover {
+  background: #f36b35 !important;
+}
+
+.btn-primary:active {
+  background: #ce3b01 !important;
+  font-weight: 700;
 }
 
 .container .card-title {
-     font-weight: 600;
+  font-weight: 600;
 }
 
 .btn-join-event {
-     background: #E54201;
-     border-color: #E54201;
-     font-weight: 600;
+  background: #e54201;
+  border-color: #e54201;
+  font-weight: 600;
 }
 
 .btn-join-event:hover {
-     background: #F36B35;
-     border-color: #F36B35;
+  background: #f36b35;
+  border-color: #f36b35;
 }
 
 #output {
-     display: flex;
-     row-gap: 25px;
-     column-gap: 25px;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
+  display: flex;
+  row-gap: 25px;
+  column-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Styling Detail Event */
-#detail-event {
-     margin-top: 5rem;
+.activity-detail h4 {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(193, 193, 193, 0.537);
+  padding-bottom: 0.5rem;
+}
+
+.activity-detail p {
+  text-align: justify;
+}
+
+.card .card-body h4 {
+  text-align: center;
+  line-height: 1.4;
+  margin: 1rem 1rem;
+}
+
+.card .card-body .date-detail,
+.card .card-body .time-detail,
+.card .card-body .ticket-detail,
+.card .card-body .location-detail,
+.card .card-body .registration-detail {
+  margin: 1.2rem 1.2rem;
+  color: #ce3b01;
+}
+
+.card .card-body .date-detail p,
+.card .card-body .time-detail p,
+.card .card-body .ticket-detail p,
+.card .card-body .location-detail p,
+.card .card-body .registration-detail p {
+  color: #000 !important;
+}
+
+.btn-detail-event a {
+  margin: 1rem 1rem;
+}
+
+/* Styling event success */
+#event-success .img-success img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+#event-success .desc-success h1 {
+  margin-top: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  font-size: 32px;
+}
+
+#event-success .desc-success p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  color: #656565;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#event-success .desc-success .btn-success {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  background: #e54201;
+  border: none;
+}
+
+#event-success .desc-success .btn-success:hover {
+  background: #f36b35 !important;
+}
+
+#event-success .desc-success .btn-success:active {
+  background: #ce3b01 !important;
+  font-weight: 700;
+}
+
+/* Styling Responsive Navbar & Event Page */
+@media (max-width: 576px) {
+  .btn-login {
+    margin-top: 1rem;
+    min-width: 25%;
+  }
+
+  .container .card {
+    margin: 1rem auto;
+    display: flex;
+    row-gap: 10px !important;
+  }
 }
 
 @media (max-width: 576px) {
-     .btn-login {
-          margin-top: 1rem;
-          min-width: 25%;
-     }
+  #output-detail .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+  }
 
-     .container .card {
-          margin: 1rem auto;
-          display: flex;
-          row-gap: 10px !important;
-     }
+  #output-detail .container .card {
+    max-width: 100%;
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  #output-detail .container {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center !important;
+    align-items: center !important;
+    /* overflow: hidden; */
+    margin: 0 auto !important;
+  }
 }
