@@ -28,14 +28,14 @@ body {
   border-radius: 20px;
 }
 
-div > .btn-green {
+div > .btn-success {
   background: #34b632;
   border-color: #34b632;
   letter-spacing: 1px;
   transition: 0.3s ease-out;
 }
 
-div > .btn-green:hover {
+div > .btn-success:hover {
   background: #115810;
   border-color: #115810;
   font-weight: 700;
