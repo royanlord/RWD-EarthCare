@@ -20,11 +20,12 @@ if (id == 0 || Number.isNaN(id)) {
         .then(response => response.json())
         .then((response) => {
             response.forEach((data) => {
+                document.title = `${data.title}`
                 if (data.id == id) {
                     detail.innerHTML = `
                         <div class="row mt-4 mx-4">
                             <div class="col-12 rounded-3 mb-lg-4">
-                                <img src="assets/images/${data.img}" class="img-fluid rounded-3" alt="Kebakaran Hutan">
+                                <img src="assets/images/${data.img}" class="img-fluid rounded-3" alt="${data.title}">
                             </div>
                             <div class="col-12 mt-2 mt-lg-5 mx-lg-auto w-50" id="main-article">
                                 <h2 class="fw-semibold">${data.title}</h2>

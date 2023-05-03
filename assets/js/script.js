@@ -6,10 +6,11 @@ setTimeout(() => {
         .then(response => response.json())
         .then((response) => {
             response.map((data) => {
+                document.title = "Article"
                 articles.innerHTML += `
                     <div class="row mx-3 mb-4">
                         <div class="col-lg-6">
-                            <img src='assets/images/${data.image}' class="img-fluid my-2 me-4 rounded-3" alt="kebakaran hutan">
+                            <img src='assets/images/${data.image}' class="img-fluid my-2 me-4 rounded-3" alt="${data.titleArticle}">
                         </div>
                         <div class="col-lg-6 ps-lg-5 d-flex flex-column justify-content-center">
                             <h2 class="fw-semibold">${data.titleArticle}</h2>
