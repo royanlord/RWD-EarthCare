@@ -3,6 +3,29 @@
     font-family: 'Inter', sans-serif;
 }
 
+.navbar {
+    background: #115810;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: -1rem;
+}
+
+.btn-login {
+    background: #E54201;
+    border-color: #E54201;
+    font-weight: 600;
+}
+
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
 }
