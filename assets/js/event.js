@@ -17,9 +17,9 @@ function apiEvent() {
 
                     output += `
                     <div class="row">
-                         <div class="col-md-4">
-                              <div class="card">
-                                   <img src="${el.gambar}" alt="${el.alt}">
+                         <div class="col-md-4 col-lg-4">
+                              <div class="card h-100">
+                                   <img class="img-fluid" src="${el.gambar}" alt="${el.alt}">
                                    <div class="card-body">
                                         <h5 class="card-title">${el.judul}</h5>
                                         <p class="card-text mb-3">${el.pembuat}</p>
