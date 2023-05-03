@@ -33,6 +33,14 @@ footer>.container-fluid {
 
 @media screen and (max-width: 992px) {
     footer {
-        height: auto;
-    }
+            height: auto;
+        }
+    
+        footer h5 {
+            font-size: 1rem;
+        }
+    
+        footer .fs-6 {
+            font-size: 1.5rem;
+        }
 }
