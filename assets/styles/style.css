@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img {
+    filter: brightness(80%);
+}
+
 body, html {
     scroll-behavior: smooth;
 }
