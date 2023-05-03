@@ -1,62 +1,64 @@
 * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-     text-decoration: none;
+  text-decoration: none;
 }
 
 .title-login {
-     text-transform: uppercase;
-     font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 body {
-     background: #115810;
-     font-family: "Inter", sans-serif;
+  background: #115810;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     max-width: 70%;
-     background: #FFFFFF;
-     padding: 3rem;
-     border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
 }
 
 div > .btn-green {
-     background: #34b632;
-     border-color: #34b632;
+  background: #34b632;
+  border-color: #34b632;
+  letter-spacing: 1px;
+  transition: 0.3s ease-out;
 }
 
 div > .btn-green:hover {
-     background: #115810;
-     border-color: #115810;
+  background: #115810;
+  border-color: #115810;
+  font-weight: 700;
 }
 
 .text-register,
 .text-forgot {
-     color: #0093ED !important;
+  color: #0093ed !important;
 }
 
-@media(max-width: 576px) {
-     .container {
-          max-width: 90%;
-     }
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
 
-     input {
-          font-size: 1rem !important;
-          max-width: 100% !important;
-     }
+  input {
+    font-size: 1rem !important;
+    max-width: 100% !important;
+  }
 
-     .text-register {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-     }
+  .text-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
