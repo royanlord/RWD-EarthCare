@@ -12,7 +12,11 @@ function dataAuthRegister() {
 
   // cek input wajib di isi
   if (fullName == "" && emailAddress == "" && passwordAddress == "") {
-    alert("input wajib di isi semua!");
+    Swal.fire({
+      title: "Error",
+      text: "Input harus wajib di isi semua",
+      icon: "error",
+    });
     return;
   }
 
@@ -22,15 +26,21 @@ function dataAuthRegister() {
       return check.emailAddress == emailAddress;
     })
   ) {
-    alert(
-      "Email yang anda masukan sudah ada yang menggunakan, coba ganti email anda"
-    );
-    return;
+    Swal.fire({
+      title: "Error",
+      text: "Email yang anda masukan sudah ada yang menggunakan, coba ganti email anda",
+      icon: "error",
+    });
   } else {
     user_save.push({
       fullName: fullName,
       emailAddress: emailAddress,
       passwordAddress: passwordAddress,
+    });
+    Swal.fire({
+      title: "Success",
+      text: "Registrasi anda berhasil",
+      icon: "success",
     });
     localStorage.setItem("users", JSON.stringify(user_save));
   }
@@ -42,7 +52,7 @@ function dataAuthRegister() {
 }
 
 // Proses Login
-function dataAuth() {
+function dataAuthLogin() {
   let emailAddress, passwordAddress;
   emailAddress = document.getElementById("emailAddress").value;
   passwordAddress = document.getElementById("passwordAddress").value;
@@ -68,7 +78,7 @@ function dataAuth() {
   ) {
     alert("Success login");
     // Halaman sementara
-    window.location.href = "https://github.com/";
+    window.location.href = "https://google.com/";
   } else {
     alert("Email atau Password anda salah!");
   }
