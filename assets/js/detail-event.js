@@ -43,7 +43,7 @@ function apiEvent() {
           
 <div class="row">
      <div class="col-md-12 col-lg-3">
-     <div class="card mt-5 mx-md-auto" style="width: 25rem; height: 28rem;">
+     <div class="card card-detail-event mt-5 mx-md-auto" style="width: 28rem; height: 28rem;">
           <div class="card-body">
           <h4 class="card-title mb-4 fw-bold">${el.judul}</h4>
           <div class="date-detail mb-4">
@@ -66,7 +66,7 @@ function apiEvent() {
                <i class="fa-solid fa-address-card"></i>
                <p class="d-inline text-muted ms-1">${el.pendaftaran}</p>
           </div>
-          <div class="d-grid mt-3 btn-detail-event">
+          <div class="d-grid mt-2 mt-3 btn-detail-event">
                <a href="../event-success.html" class="btn btn-primary">Daftar Event</a>
           </div>
           </div>
