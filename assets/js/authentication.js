@@ -64,7 +64,11 @@ function dataAuthLogin() {
 
   // Cek semua input wajib di isi
   if (emailAddress == "" && passwordAddress == "") {
-    alert("input wajib di isi semua!");
+    Swal.fire({
+      title: "Error",
+      text: "Input harus wajib di isi semua",
+      icon: "error",
+    });
     return;
   }
 
@@ -76,11 +80,19 @@ function dataAuthLogin() {
       );
     })
   ) {
-    alert("Success login");
+    Swal.fire({
+      title: "Success",
+      text: "Login anda berhasil",
+      icon: "success",
+    });
     // Halaman sementara
     window.location.href = "https://google.com/";
   } else {
-    alert("Email atau Password anda salah!");
+    Swal.fire({
+      title: "Error",
+      text: "Email atau Password anda salah",
+      icon: "error",
+    });
   }
 
   // Clear data
