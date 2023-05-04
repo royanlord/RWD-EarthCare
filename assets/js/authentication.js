@@ -1,5 +1,5 @@
 // Proses Register
-function dataAuth() {
+function dataAuthRegister() {
   let fullName, emailAddress, passwordAddress;
   fullName = document.getElementById("fullName").value;
   emailAddress = document.getElementById("emailAddress").value;
@@ -31,7 +31,6 @@ function dataAuth() {
       emailAddress: emailAddress,
       passwordAddress: passwordAddress,
     });
-    window.location = "../login.html";
     localStorage.setItem("users", JSON.stringify(user_save));
   }
 
