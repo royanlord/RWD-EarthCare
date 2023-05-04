@@ -25,6 +25,7 @@ function dataAuthRegister() {
     alert(
       "Email yang anda masukan sudah ada yang menggunakan, coba ganti email anda"
     );
+    return;
   } else {
     user_save.push({
       fullName: fullName,
