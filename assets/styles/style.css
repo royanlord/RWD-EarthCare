@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
 
+/* Styling Navbar */
 .navbar {
   background: #115810;
   padding: 1rem;
@@ -19,13 +26,6 @@ body {
   margin-top: -1rem;
 }
 
-/* navbar .btn-login {
-  background: #e54201;
-  border-color: #e54201;
-  color: #fff;
-  font-weight: 600;
-} */
-
 navbar .btn-primary {
   background: #e54201 !important;
 }
@@ -42,6 +42,7 @@ main .text-event {
   margin-top: 8rem;
 }
 
+/* Styling Event Page */
 .container .card {
   margin-top: 1rem;
   box-shadow: 8px 9px 18px -7px rgba(135, 135, 135, 0.75);
@@ -90,7 +91,7 @@ main .text-event {
   flex-wrap: wrap;
 }
 
-/* Styling Detail Event */
+/* Styling Detail Event Page */
 .activity-detail h4 {
   margin-top: 0.8rem;
   font-weight: 600;
@@ -113,7 +114,7 @@ main .text-event {
 .card .card-body .ticket-detail,
 .card .card-body .location-detail,
 .card .card-body .registration-detail {
-  margin: 1.2rem 1.2rem;
+  margin: 1rem 1rem;
   color: #ce3b01;
 }
 
@@ -126,15 +127,15 @@ main .text-event {
 }
 
 .btn-detail-event a {
-  margin: 1rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
-/* Styling event success */
+/* Styling event success Page */
 #event-success .img-success img {
   width: 400px;
   height: 350px;
   object-fit: cover;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -155,6 +156,13 @@ main .text-event {
   font-size: 18px;
 }
 
+#event-success .desc-bottom {
+  font-size: 18px;
+  margin-top: -1rem;
+  display: block;
+  color: #656565;
+}
+
 #event-success .desc-success .btn-success {
   margin-top: 1rem;
   padding: 0.8rem 1.2rem;
@@ -172,7 +180,7 @@ main .text-event {
 }
 
 /* Styling Responsive Navbar & Event Page */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .btn-login {
     margin-top: 1rem;
     min-width: 25%;
@@ -185,7 +193,8 @@ main .text-event {
   }
 }
 
-@media (max-width: 576px) {
+/* Styling Responsive Detail Event Page */
+@media screen and (max-width: 576px) {
   #output-detail .container {
     display: flex;
     flex-direction: column;
@@ -200,14 +209,12 @@ main .text-event {
   }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   #output-detail .container {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center !important;
     align-items: center !important;
-    /* overflow: hidden; */
     margin: 0 auto !important;
   }
 }
