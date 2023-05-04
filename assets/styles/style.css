@@ -13,6 +13,10 @@ a {
   font-weight: 700;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background: #115810;
   font-family: "Inter", sans-serif;
@@ -46,7 +50,32 @@ div > .btn-success:hover {
   color: #0093ed !important;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  .container img {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 820px) {
+  .container {
+    max-width: 90%;
+  }
+  .container img {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .container img {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .container {
     max-width: 90%;
   }
