@@ -24,6 +24,10 @@ header .bg-dark,
     background-color: #CE3B01 !important;
 }
 
+.about {
+    margin-top: 100px;
+}
+
 .title {
     color: #E54201;
 }
