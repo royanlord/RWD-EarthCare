@@ -38,6 +38,10 @@ navbar .btn-login:active {
   background: #ce3b01 !important;
 }
 
+header .dropdown .dropdown-menu {
+  background: #115810 !important;
+}
+
 main .text-event {
   margin-top: 8rem;
 }
@@ -216,5 +220,18 @@ main .text-event {
     justify-content: center !important;
     align-items: center !important;
     margin: 0 auto !important;
+  }
+}
+
+/* Styling Responsive Event Success Page */
+@media screen and (max-width: 576px) {
+  #event-success .img-success img {
+    max-width: 85%;
+    margin-top: 3rem;
+  }
+
+  #event-success .desc-success p,
+  #event-success .desc-success span {
+    font-size: 16px;
   }
 }
