@@ -28,6 +28,10 @@ header .bg-dark, .dropdown-menu {
     background-color: #CE3B01 !important;
 }
 
+#article {
+    margin-top: 6.3rem;
+}
+
 #article p {
     text-align: justify;
 }
@@ -42,6 +46,10 @@ header .bg-dark, .dropdown-menu {
 
 #article .btn-primary:active {
     background-color: #CE3B01 !important;
+}
+
+#detail-atc {
+    margin-top: 6rem;
 }
 
 #detail-atc p {
