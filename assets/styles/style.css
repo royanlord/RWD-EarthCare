@@ -8,6 +8,10 @@ body, html {
     scroll-behavior: smooth;
 }
 
+header .bg-dark {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3)
+}
+
 header .bg-dark, .dropdown-menu {
     background-color: #115810 !important;
 }
@@ -22,6 +26,10 @@ header .bg-dark, .dropdown-menu {
 
 .navbar .btn:active {
     background-color: #CE3B01 !important;
+}
+
+#jumbotron-contact {
+    margin-top: 4.4rem;
 }
 
 #jumbotron-contact > div {
