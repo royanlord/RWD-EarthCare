@@ -46,6 +46,20 @@ main .text-event {
   margin-top: 8rem;
 }
 
+main .text-event p {
+  color: #656565;
+}
+main .text-event h2 {
+  color: #000;
+}
+
+main .text-event hr {
+  width: 50%;
+  margin: 0 auto;
+  color: #e54201;
+  margin-bottom: 2rem;
+}
+
 /* Styling Event Page */
 .container .card {
   margin-top: 1rem;
@@ -75,6 +89,15 @@ main .text-event {
   font-weight: 600;
 }
 
+.card .card-body .date i,
+.card .card-body .location i {
+  color: #ce3b01 !important;
+}
+
+.card .card-body .location p:nth-child(5) {
+  font-weight: bold;
+}
+
 .btn-join-event {
   background: #e54201;
   border-color: #e54201;
@@ -101,16 +124,19 @@ main .text-event {
   font-weight: 600;
   border-bottom: 1px solid rgba(193, 193, 193, 0.537);
   padding-bottom: 0.5rem;
+  color: #000;
 }
 
 .activity-detail p {
   text-align: justify;
+  color: #656565;
 }
 
 .card .card-body h4 {
   text-align: center;
   line-height: 1.4;
   margin: 1rem 1rem;
+  color: #000;
 }
 
 .card .card-body .date-detail,
@@ -194,6 +220,13 @@ main .text-event {
     margin: 1rem auto;
     display: flex;
     row-gap: 10px !important;
+  }
+
+  main .text-event hr {
+    width: 90%;
+    color: #e54201;
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }
 
