@@ -229,6 +229,19 @@ main .text-event hr {
   font-weight: 700;
 }
 
+footer {
+  background-color: #115810;
+  height: 40vh;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer > .container-fluid {
+  width: 80vw !important;
+}
+
 /* Styling Responsive Navbar & Event Page */
 @media screen and (max-width: 576px) {
   .btn-login {
@@ -255,6 +268,18 @@ main .text-event hr {
   #user-name {
     width: auto !important;
   }
+
+  footer {
+    height: auto;
+}
+
+footer h5 {
+    font-size: 1rem;
+}
+
+footer .fs-6 {
+    font-size: 1.5rem;
+}
 }
 
 @media screen and (max-width: 576px) {
