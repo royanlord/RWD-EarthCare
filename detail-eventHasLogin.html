@@ -29,7 +29,7 @@
 
 <body>
      <header id="header" class="d-none">
-          <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+          <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
                <div class="container">
                     <a class="navbar-brand" href="#">
                          <img src="assets/images/logo-nav.png" class="logo-img" alt="">EarthCare
@@ -41,14 +41,14 @@
                     <div class="collapse navbar-collapse" id="navDropdown">
                          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center text-center">
                               <li class="nav-item">
-                                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                   <a class="nav-link" aria-current="page" href="#">Home</a>
                               </li>
                               <li class="nav-item dropdown">
-                                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Content
                                    </a>
-                                   <ul class="dropdown-menu slideIn animate">
+                                   <ul class="dropdown-menu slideIn animate dropdown-menu-dark">
                                         <li><a class="dropdown-item" href="#">Event</a></li>
                                         <li>
                                              <hr class="dropdown-divider">
@@ -62,9 +62,24 @@
                               <li class="nav-item me-lg-4">
                                    <a class="nav-link" href="#">Contact Us</a>
                               </li>
-                              <li class="nav-item">
-                                   <button class="btn btn-primary px-3" type="submit">Login</button>
-                              </li>
+                              <li class="nav-item dropdown">
+                                   <a class="nav-link active dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                     <div id="user-profile" class="rounded-pill me-2">
+                                       <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                                     </div>
+                                     <p class="my-auto" id="user-name">
+                                       Royan Farid Fathurrahhman
+                                     </p>
+                                   </a>
+                                   <ul class="dropdown-menu animate slideIn dropdown-menu-dark ms-lg-5 mx-5">
+                                     <!-- <li><span class="dropdown-item">Halo, Royan</span></li> -->
+                                     <!-- <li><hr class="dropdown-divider"></li> -->
+                                     <li><a class="dropdown-item text-lg-start text-center" id="logout" href="#">Logout</a></li>
+                                   </ul>
+                                     <!-- <a class="nav-link" href="#">
+                                         <button class="btn btn-primary px-3 border-0" type="submit">Login</button>
+                                     </a> -->
+                                 </li>
                          </ul>
                     </div>
                </div>
