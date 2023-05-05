@@ -57,11 +57,6 @@ function dataAuthLogin() {
   emailAddress = document.getElementById("emailAddress").value;
   passwordAddress = document.getElementById("passwordAddress").value;
 
-  // if (dataAuthLogin() === "") {
-  //   window.location.href = "login.html";
-  //   return;
-  // }
-
   let user_save = JSON.parse(localStorage.getItem("users")) || [];
 
   // Cek semua input wajib di isi
@@ -90,7 +85,9 @@ function dataAuthLogin() {
       icon: "success",
     });
     localStorage.setItem("fullName", matchedUser.fullName);
-    window.location.href = "profile.html";
+
+    // let showUser = localStorage.setItem("fullName", matchedUser.fullName);
+    // window.location.href = "event.html";
   } else {
     Swal.fire({
       title: "Error",
@@ -103,3 +100,14 @@ function dataAuthLogin() {
   document.getElementById("emailAddress").value = "";
   document.getElementById("passwordAddress").value = "";
 }
+
+// Login event function
+function registerErrorEvent() {
+  window.location.href = "login.html";
+}
+function registerSuccessEvent() {
+  window.location.href = "profile.html";
+}
+
+document.getElementById("profileUserNavbar").innerText =
+  localStorage.getItem("fullName");
