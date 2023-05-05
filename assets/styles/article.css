@@ -16,6 +16,12 @@ header .bg-dark {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3)
 }
 
+header .dropdown-menu {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    border: none !important;
+    background-color: #094508 !important;
+}
+
 header .bg-dark, .dropdown-menu {
     background-color: #115810 !important;
 }
@@ -31,6 +37,51 @@ header .bg-dark, .dropdown-menu {
 .navbar .btn:active {
     background-color: #CE3B01 !important;
 }
+
+/* animation dropdown */
+@media (min-width: 200px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-2rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(-2rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+    0% {
+      -webkit-transform: translateY(-2rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
 
 /* user profile display after login */
 #user-profile {
