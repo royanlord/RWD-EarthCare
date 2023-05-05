@@ -3,27 +3,25 @@
     font-family: 'Inter', sans-serif;
 }
 
-.navbar {
-    background: #115810;
-    padding: 1rem;
+header .bg-dark {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3)
 }
 
-.navbar-brand {
-    font-size: 24px;
-    font-weight: 700;
+header .bg-dark,
+.dropdown-menu {
+    background-color: #115810 !important;
 }
 
-.logo-img {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-top: -1rem;
+.navbar .btn-primary {
+    background-color: #E54201;
 }
 
-.btn-login {
-    background: #E54201;
-    border-color: #E54201;
-    font-weight: 600;
+.navbar .btn:hover {
+    background-color: #F36B35 !important;
+}
+
+.navbar .btn:active {
+    background-color: #CE3B01 !important;
 }
 
 .overlay {
