@@ -26,6 +26,10 @@ header .bg-dark, .dropdown-menu {
     background-color: #115810 !important;
 }
 
+.text-muted {
+    color: #656565 !important;
+}
+
 .navbar .btn-primary {
     background-color: #E54201;
 }
@@ -101,7 +105,7 @@ header .bg-dark, .dropdown-menu {
 
 /* -------- */
 #article {
-    margin-top: 6.3rem;
+    margin-top: 7.5rem;
 }
 
 #article p {
@@ -148,6 +152,10 @@ footer > .container-fluid {
 
     #article-detail #main-article {
         width: 100% !important;
+    }
+
+    #article {
+        margin-top: 7rem;
     }
 
     #article-detail h2 {
