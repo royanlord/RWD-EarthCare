@@ -24,6 +24,7 @@ function apiEvent() {
                let output = "";
 
                data.forEach(function (el) {
+                    document.title = `${el.judul}`
                     if (el.id == id) {
                          output += `
                               <div id="output-detail" class="container my-5 d-flex flex-sm-column justify-content-justify-content-center align-content-center flex-lg-row">
