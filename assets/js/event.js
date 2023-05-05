@@ -1,21 +1,21 @@
 function apiEvent() {
-     fetch('https://644dfece4e86e9a4d8ef004c.mockapi.io/events')
-          .then(function (res) {
-               return res.json()
-          })
-          .then(function (data) {
-               let output = ''
-               data.forEach(function (el) {
-                    const endDate = new Date(el.tanggal)
-                    const currentDate = new Date()
+  fetch("https://644dfece4e86e9a4d8ef004c.mockapi.io/events")
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      let output = "";
+      data.forEach(function (el) {
+        const endDate = new Date(el.tanggal);
+        const currentDate = new Date();
 
-                    const eventEnd = currentDate > endDate
+        const eventEnd = currentDate > endDate;
 
-                    const joinButton = eventEnd ?
-                         `<a href="#" class="btn btn-danger disabled mt-3">Event Ended</a>` :
-                         `<a href="./detail-event.html?id=${el.id}" class="btn btn-primary btn-join-event mt-3">Join Now</a>`
+        const joinButton = eventEnd
+          ? `<a href="#" class="btn btn-danger disabled mt-3">Event Ended</a>`
+          : `<a href="./detail-event.html?id=${el.id}" class="btn btn-primary btn-join-event mt-3">Join Now</a>`;
 
-                    output += `
+        output += `
                     <div class="row">
                          <div class="col-md-4 col-lg-4">
                               <div class="card h-100">
@@ -38,13 +38,13 @@ function apiEvent() {
                               </div>
                          </div>
                     </div>
-                    `
-               })
-               document.getElementById('output').innerHTML = output
-          })
-          .catch(function (err) {
-               console.log(err)
-          })
+                    `;
+      });
+      document.getElementById("output").innerHTML = output;
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
 }
 
-apiEvent()
+apiEvent();
