@@ -51,16 +51,18 @@ function dataAuthRegister() {
   document.getElementById("passwordAddress").value = "";
 }
 
-// Proses Login
+// Proses login
 function dataAuthLogin() {
   let emailAddress, passwordAddress;
   emailAddress = document.getElementById("emailAddress").value;
   passwordAddress = document.getElementById("passwordAddress").value;
 
-  let user_save = new Array();
-  user_save = JSON.parse(localStorage.getItem("users"))
-    ? JSON.parse(localStorage.getItem("users"))
-    : [];
+  // if (dataAuthLogin() === "") {
+  //   window.location.href = "login.html";
+  //   return;
+  // }
+
+  let user_save = JSON.parse(localStorage.getItem("users")) || [];
 
   // Cek semua input wajib di isi
   if (emailAddress == "" && passwordAddress == "") {
@@ -72,21 +74,23 @@ function dataAuthLogin() {
     return;
   }
 
-  // Periksa email dan password sudah masuk di localstorage
-  if (
-    user_save.some((v) => {
-      return (
-        v.emailAddress == emailAddress && v.passwordAddress == passwordAddress
-      );
-    })
-  ) {
+  let matchedUserIndexLogin = user_save.findIndex((v) => {
+    return (
+      v.emailAddress == emailAddress && v.passwordAddress == passwordAddress
+    );
+  });
+
+  // Cek apakah user sudah melakukan registrasi sebelum login
+  // Jika sudah maka tampilkan fullName user
+  if (matchedUserIndexLogin != -1) {
+    let matchedUser = user_save[matchedUserIndexLogin];
     Swal.fire({
       title: "Success",
       text: "Login anda berhasil",
       icon: "success",
     });
-    // Halaman sementara
-    window.location.href = "https://google.com/";
+    localStorage.setItem("fullName", matchedUser.fullName);
+    window.location.href = "profile.html";
   } else {
     Swal.fire({
       title: "Error",
@@ -95,7 +99,7 @@ function dataAuthLogin() {
     });
   }
 
-  // Clear data
+  // hapus data input
   document.getElementById("emailAddress").value = "";
   document.getElementById("passwordAddress").value = "";
 }
