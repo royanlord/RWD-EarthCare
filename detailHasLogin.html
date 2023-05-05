@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/71c2ab2c83.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="d-none">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+              <a class="navbar-brand fw-bold text-white" href="#">
+                <img src="assets/images/logo-nav.png" alt="logo navbar" height="50">
+                EarthCare
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav text-center ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Content
+                        </a>
+                        <ul class="dropdown-menu animate slideIn dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Event</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="articleHasLogin.html">Article</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div id="user-profile" class="rounded-pill me-2">
+                          <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </div>
+                        <p class="my-auto" id="user-name">
+                          Royan Farid Fathurrahhman
+                        </p>
+                      </a>
+                      <ul class="dropdown-menu animate slideIn dropdown-menu-dark ms-lg-5 mx-5">
+                        <!-- <li><span class="dropdown-item">Halo, Royan</span></li> -->
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                        <li><a class="dropdown-item text-lg-start text-center" id="logout" href="#">Logout</a></li>
+                      </ul>
+                        <!-- <a class="nav-link" href="#">
+                            <button class="btn btn-primary px-3 border-0" type="submit">Login</button>
+                        </a> -->
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container" id="loading">
+      <div class="row d-flex justify-content-center">
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_pvjwvcvn.json"  background="transparent"  speed="1.5"  style="width: 550px; height: 550px;"  loop  autoplay></lottie-player>
+      </div>
+    </div>
+
+    <main id="detail-atc" class="d-none">
+        <section id="article-detail">
+            <div class="container-fluid" id="detail">
+                <!-- <div class="row mt-4 mx-4">
+                    <div class="col-12 rounded-3 mb-lg-4">
+                        <img src="assets/images/article1.svg" class="img-fluid rounded-3" alt="Kebakaran Hutan">
+                    </div>
+                    <div class="col-12 mt-2 mt-lg-5 mx-lg-auto w-50" id="main-article">
+                        <h2 class="fw-semibold">Penyebab Terjadinya Kebakaran Hutan dan Cara Mencegahnya</h2>
+                        <div class="date-article mb-3 mb-lg-4">
+                            <i class="fa-solid fa-calendar-days text-muted fa-lg"></i>
+                            <p class="d-inline text-muted ms-1">Selasa, 10 Januari 2023</p>
+                        </div>
+                        <p class="text-wrap">
+                            Kebakaran hutan seringkali terjadi secara alami di daerah vegetasi kering. Kebakaran hutan disebut sebagai kebakaran semak atau kebakaran gurun tergantung pada area di mana hal ini terjadi. Kebakaran hutan ialah terbakarnya sesuatu yang menimbulkan bahaya atau mendatangkan bencana.
+                            <br/>
+                            <br/>
+                            Secara umum, kebakaran hutan yang terjadi secara alami merupakan bagian dari ekosistem alam. Cuaca yang makin panas dan lebih kering yang disebabkan oleh perubahan iklim dan pengelolaan lahan yang buruk menciptakan kondisi yang memudahkan terjadinya kebakaran hutan lebih sering dan berintensitas tinggi. 
+                            <br/>
+                            <br/>
+                            Meski demikian, masalah sebenarnya dari kebakaran hutan paling sering berasal dari ulah manusia. Ya, penyebab terjadinya kebakaran hutan tak bisa dilepaskan dari kontribusi manusia yang merusak ekosistem alam. Berikut penjelasan selengkapnya mengenai apa saja penyebab kebakaran hutan yang perlu diketahui.
+                        </p>
+                        <p class="text-wrap">
+                            Kebakaran hutan dapat didefinisikan sebagai pembakaran atau kebakaran tanaman yang tidak terkendali dan tidak ditentukan dalam pengaturan alami seperti hutan, padang rumput, semak belukar, atau tundra, yang mengonsumsi bahan bakar alami dan menyebar berdasarkan kondisi lingkungan (misalnya, angin, topografi).
+                            <br/>
+                            Bahan bakar, oksigen, dan sumber panas membantu penyebaran kebakaran hutan. Bahan bakar adalah bahan yang mudah terbakar di sekitar api, termasuk pohon, rumput, semak, dan bahkan rumah. Semakin besar beban bahan bakar suatu daerah, semakin hebat apinya.
+                        </p>
+                        <p class="text-wrap">
+                            Penyebab terjadinya kebakaran hutan secara alami sebagai contohnya adalah adanya kilat yang menyambar pohon atau bangunan, letusan gunung api yang menebarkan bongkahan bara api, dan gesekan antara ranting tumbuhan kering yang mengandung minyak karena goyangan angin yang menimbulkan panas atau percikan api, mengutip Notohadinegoro dalam tulisannya yang berjudul Pembakaran dan Kebakaran Lahan, Jurnal Ilmu Tanah UGM 2006.
+                            <br/>
+                            Sementara itu, penyebab terjadinya kebakaran hutan karena ulah manusia di antaranya dikarenakan oleh beberapa kegiatan seperti kegiatan ladang, perkebunan (PIR), Hutan Tanaman Industri (HTI), penyiapan lahan untuk ternak sapi, ekstraksi hasil hutan bukan kayu, pengembangan industri, pemukiman kembali, perburuan, kelalaian, dan sebagainya. Penyebab lainnya yang berasal dari manusia adalah nyala api, rokok, percikan listrik, atau sumber api lainnya bersentuhan dengan bahan yang mudah terbakar.
+                        </p>
+                        <p class="text-wrap">
+                            Untuk cara mencegah terjadinya kebakaran, yang bisa kita kontrol adalah yang berasal dari ulah manusia. Mendidik masyarakat dan menciptakan kesadaran tentang kebakaran hutan adalah cara pertama yang harus dilakukan.
+                            <br/>
+                            Diperlukan juga peningkatan sistem deteksi kebakaran dan menara pengawas dan jaringan untuk komunikasi, patroli oleh departemen kehutanan secara berkala, serta pemberlakuan persetujuan dan peringatan ketat bagi mereka yang menggunakan hutan untuk kegiatan petualangan.
+                        </p>
+                    </div>
+                    <div class="col-12">
+
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="d-none">
+        <div class="container-fluid mt-4">
+          <div class="row py-lg-5 py-4 mx-lg-4 text-white d-flex justify-content-center">
+            <div class="col-lg-3 pt-sm-0 pt-md-0 pt-lg-4">
+              <h4 class="fw-semibold text-white">
+                <img src="assets/images/logo-nav.png" alt="logo navbar" height="45">
+                EarthCare
+              </h4>
+              <p class="mt-3 text-wrap">&copy; Copyright 2023 all rights reserved</p>
+            </div>
+            <div class="col-lg-2 pt-lg-4">
+              <ul class="ps-0">
+                <h5 class="fw-semibold">Content</h5>
+                <li class="fs-6 fw-light">Event</li>
+                <li class="fs-6 fw-light">Article</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 pt-lg-4">
+              <ul class="ps-0">
+                <h5 class="fw-semibold">About Us</h5>
+                <li class="fs-6 fw-light">About</li>
+                <li class="fs-6 fw-light">Our Team</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 pt-lg-4">
+              <h5 class="fw-semibold text-center text-lg-start">Connect with us</h5>
+              <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+                <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                  <i class="fa-brands fa-twitter fa-xl"></i>
+                </a>
+                <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                  <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+                <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                  <i class="fa-brands fa-facebook fa-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="assets/js/detail.js" defer></script>
+</body>
+</html>
