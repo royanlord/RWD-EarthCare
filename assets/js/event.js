@@ -15,7 +15,7 @@ function apiEvent() {
 
                     const joinButton = eventEnd
                     ? `<a href="#" class="btn btn-danger disabled mt-3">Event Ended</a>`
-                    : `<a href="./detail-event.html?id=${el.id}" class="btn btn-primary btn-join-event mt-3">Join Now</a>`;
+                    : `<a href="./login.html" class="btn btn-primary btn-join-event mt-3">Join Now</a>`;
 
                     output += `
                          <div class="row">
