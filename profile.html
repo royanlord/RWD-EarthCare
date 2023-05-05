@@ -28,11 +28,7 @@
           <div class="col-12 col-lg-12">
                <h1>Profil</h1>
           </div>
-          <h4 class="my-4">Welcome,
-               <script>
-                    document.write(localStorage.getItem("fullName"));
-               </script>
-          </h4>
+          <h4 id="profileUser" class="my-4">Welcome,</h4>
           <a class="btn btn-danger" href="login.html" onclick="logOut()">Logout</a>
      </div>
 
@@ -52,6 +48,7 @@
 
      <!-- Javascript -->
      <script src="assets/js/authentication.js"></script>
+     <script src="assets/js/profile.js"></script>
 
      <!-- Javascript Sweetalert2 -->
      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
