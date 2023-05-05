@@ -9,9 +9,17 @@ body {
 }
 
 /* Styling Navbar */
+header .dropdown-menu {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  border: none !important;
+  background: #094508;
+}
+
 .navbar {
-  background: #115810;
+  background: #115810 !important;
   padding: 1rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  border: none !important;
 }
 
 .navbar-brand {
@@ -36,10 +44,6 @@ navbar .btn-login:hover {
 
 navbar .btn-login:active {
   background: #ce3b01 !important;
-}
-
-header .dropdown .dropdown-menu {
-  background: #115810 !important;
 }
 
 main .text-event {
@@ -267,4 +271,49 @@ main .text-event hr {
   #event-success .desc-success span {
     font-size: 16px;
   }
+}
+
+/* animation dropdown */
+@media screen and (min-width: 200px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(-2rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
 }
