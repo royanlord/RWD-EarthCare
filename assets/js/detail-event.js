@@ -69,7 +69,7 @@ function apiEvent() {
                                                        <p class="d-inline text-muted ms-1">${el.pendaftaran}</p>
                                                   </div>
                                                   <div class="d-grid mt-2 mt-3 btn-detail-event">
-                                                       <a href="../event-success.html" class="btn btn-primary">Daftar Event</a>
+                                                       <a href="./event-success.html" class="btn btn-primary">Daftar Event</a>
                                                   </div>
                                                   </div>
                                              </div>
