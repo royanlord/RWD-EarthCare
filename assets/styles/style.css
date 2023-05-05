@@ -65,6 +65,9 @@ header .dropdown-menu {
 
 .card-event{
     background-color: #F0F0F0;
+    box-shadow: 8px 9px 18px -7px rgba(135, 135, 135, 0.75);
+    -webkit-box-shadow: 8px 9px 18px -7px rgba(135, 135, 135, 0.75);
+    -moz-box-shadow: 8px 9px 18px -7px rgba(135, 135, 135, 0.75);
 }
 
 .btn-event {
@@ -159,8 +162,10 @@ header .dropdown-menu {
     object-fit: cover;
 }
 
-.right-article {
-    background-color: #fff;
+.right-article, .left-article {
+    box-shadow: 8px 9px 18px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 8px 9px 18px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 9px 18px -7px rgba(0, 0, 0, 0.75);
 }
 
 .right-article img {
