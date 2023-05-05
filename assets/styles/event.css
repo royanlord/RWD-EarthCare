@@ -15,7 +15,7 @@ header .dropdown-menu {
   background: #094508;
 }
 
-.navbar {
+header .bg-dark {
   background: #115810 !important;
   padding: 1rem;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
@@ -44,6 +44,22 @@ navbar .btn-login:hover {
 
 navbar .btn-login:active {
   background: #ce3b01 !important;
+}
+
+/* user profile display after login */
+#user-profile {
+  background-color: #E54201;
+  padding: 0.6rem 0.8rem;
+}
+
+#user-profile i {
+  font-size: 1.6rem !important;
+}
+
+#user-name {
+  width: 48% !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 main .text-event {
@@ -235,6 +251,12 @@ main .text-event hr {
 }
 
 /* Styling Responsive Detail Event Page */
+@media screen and (max-width: 992px) {
+  #user-name {
+    width: auto !important;
+  }
+}
+
 @media screen and (max-width: 576px) {
   #output-detail .container {
     display: flex;
