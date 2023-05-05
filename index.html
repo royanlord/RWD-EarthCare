@@ -370,21 +370,21 @@
                 <h1 class="text-white fw-medium display-3">We&rsquo;d love to <span id="hear">hear</span> from you!</h1>
               </div>
               <div class="col-lg-6 col-md-12">
-                <form class="contact-form was-validated text-white pe-lg-5" novalidate>
+                <form name="contact-form" class="contact-form text-white pe-lg-5">
                   <div class="mb-2">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Masukkan email" required>
-                    <div class="invalid-feedback">Email can't be empty</div>
+                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Masukkan email">
+                    <div class="mt-1 text-warning" id="invalid-email"></div>
                   </div>
                   <div class="mb-2">
                     <label for="fullname" class="form-label">Full Name</label>
-                    <input type="text" class="form-control form-control-lg" id="fullname" placeholder="Masukkan nama lengkap" required>
-                    <div class="invalid-feedback">Full Name can't be empty</div>
+                    <input type="text" class="form-control form-control-lg" id="fullname" placeholder="Masukkan nama lengkap">
+                    <div class="mt-1 text-warning" id="invalid-fullname"></div>
                   </div>
                   <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control form-control-lg" id="message" rows="6" style="resize: none;" placeholder="Tulis pertanyaan" required></textarea>
-                    <div class="invalid-feedback">Message can't be empty</div>
+                    <textarea class="form-control form-control-lg" id="message" rows="6" style="resize: none;" placeholder="Tulis pertanyaan"></textarea>
+                    <div class="mt-1 text-warning" id="invalid-message"></div>
                   </div>
                   <div class="mb-3">
                     <button type="submit" id="btnSend" class="btn btn-lg w-100 btn-primary border-0">Send Now</button>
@@ -441,11 +441,13 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
     <!-- JS BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/home.js"></script>
   </body>
 </html>
