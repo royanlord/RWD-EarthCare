@@ -1,0 +1,108 @@
+/* Contact */
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+header .bg-dark {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3)
+}
+
+header .bg-dark, .dropdown-menu {
+    background-color: #115810 !important;
+}
+
+.navbar .btn-primary {
+    background-color: #E54201;
+}
+
+.navbar .btn:hover {
+    background-color: #F36B35 !important;
+}
+
+.navbar .btn:active {
+    background-color: #CE3B01 !important;
+}
+
+#jumbotron-contact {
+    margin-top: 4.4rem;
+}
+
+#jumbotron-contact > div {
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/contact-jumbotron.svg") !important;
+    background-size: cover;
+}
+
+#content-form {
+    margin-bottom: 10vh;
+}
+
+#content-form > div {
+    width: 85vw;
+    height: auto;
+    background-color: #115810 !important;
+}
+
+#content-form #hear {
+    color: rgba(243, 107, 53, 1);
+}
+
+#content-form .btn-primary {
+    background-color: #E54201;
+}
+
+#content-form .btn:hover {
+    background-color: #F36B35 !important;
+}
+
+#content-form .btn:active {
+    background-color: #CE3B01 !important;
+}
+
+#invalid-email, #invalid-fullname, #invalid-message {
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: #115810;
+    height: 40vh;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer > .container-fluid {
+    width: 80vw !important;
+}
+
+@media screen and (max-width: 992px) {
+    #content-form > .rounded-5 {
+        border-radius: 20px !important;
+    }
+
+    #content-form form {
+        margin: 0 15px;
+    }
+
+    #content-form input, textarea, button {
+        font-size: 15px !important;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer .fs-6 {
+        font-size: 1.5rem;
+    }
+}
