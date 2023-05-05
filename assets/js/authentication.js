@@ -85,9 +85,9 @@ function dataAuthLogin() {
       icon: "success",
     });
     localStorage.setItem("fullName", matchedUser.fullName);
+    window.location.href = "event.html";
 
     // let showUser = localStorage.setItem("fullName", matchedUser.fullName);
-    // window.location.href = "event.html";
   } else {
     Swal.fire({
       title: "Error",
@@ -101,13 +101,16 @@ function dataAuthLogin() {
   document.getElementById("passwordAddress").value = "";
 }
 
-// Login event function
+// Arahkan jika  login gagal ke sini
 function registerErrorEvent() {
   window.location.href = "login.html";
 }
+
+// Arahkan jika  login berhasil ke sini
 function registerSuccessEvent() {
   window.location.href = "profile.html";
 }
 
+// Menampilkan nama lengkap pengguna
 document.getElementById("profileUserNavbar").innerText =
   localStorage.getItem("fullName");
