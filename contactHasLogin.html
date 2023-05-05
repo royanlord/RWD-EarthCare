@@ -45,10 +45,23 @@
                     <li class="nav-item me-lg-4">
                         <a class="nav-link active" href="#">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div id="user-profile" class="rounded-pill me-2">
+                          <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </div>
+                        <p class="my-auto" id="user-name">
+                          Royan Farid Fathurrahhman
+                        </p>
+                      </a>
+                      <ul class="dropdown-menu animate slideIn dropdown-menu-dark ms-lg-5 mx-5">
+                        <!-- <li><span class="dropdown-item">Halo, Royan</span></li> -->
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                        <li><a class="dropdown-item text-lg-start text-center" id="logout" href="#">Logout</a></li>
+                      </ul>
+                        <!-- <a class="nav-link" href="#">
                             <button class="btn btn-primary px-3 border-0" type="submit">Login</button>
-                        </a>
+                        </a> -->
                     </li>
                 </ul>
                 <!-- <form class="d-flex" role="search">
