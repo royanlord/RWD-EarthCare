@@ -84,7 +84,7 @@ function apiEvent() {
                document.getElementById("loading").classList.add("d-none")
                document.getElementById("header").classList.remove("d-none")
                document.getElementById("detail-evt").classList.remove("d-none")
-               // document.getElementById("footer").classList.remove("d-none")
+               document.getElementById("footer").classList.remove("d-none")
           })
           .catch(function (err) {
                console.log(err);
