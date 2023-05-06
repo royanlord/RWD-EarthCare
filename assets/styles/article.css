@@ -97,7 +97,7 @@ header .bg-dark, .dropdown-menu {
     font-size: 1.6rem !important;
 }
 
-#user-name {
+#profileUserNavbar {
     width: 48% !important;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -146,7 +146,7 @@ footer > .container-fluid {
 }
 
 @media screen and (max-width: 992px) {
-    #user-name {
+    #profileUserNavbar {
         width: auto !important;
     }
 
