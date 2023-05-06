@@ -51,6 +51,12 @@ header .dropdown-menu {
   background-color: #ce3b01 !important;
 }
 
+#profileUserNavbar {
+  width: 48% !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -358,7 +364,7 @@ footer > .container-fluid {
     margin: 10px 0;
   }
 
-  #user-name {
+  #profileUserNavbar {
     width: auto !important;
   }
 }
