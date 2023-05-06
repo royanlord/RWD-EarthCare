@@ -62,5 +62,5 @@ if (id == 0 || Number.isNaN(id)) {
         .catch(err => {
             console.log(err)
         })
-    }, 2600)
+    }, 2000)
 }

@@ -89,7 +89,7 @@ function apiEvent() {
           .catch(function (err) {
                console.log(err);
           });
-     }, 2600)
+     }, 2000)
   
 }
 
