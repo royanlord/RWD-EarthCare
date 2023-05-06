@@ -4,3 +4,4 @@ document.getElementById(
 
 document.getElementById("profileUserNavbar").innerText =
   localStorage.getItem("fullName");
+console.log(localStorage.getItem("fullName"));

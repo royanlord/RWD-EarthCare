@@ -85,7 +85,7 @@ function dataAuthLogin() {
       icon: "success",
     });
     localStorage.setItem("fullName", matchedUser.fullName);
-    window.location.href = "event.html";
+    window.location.href = "homeHasLogin.html";
 
     // let showUser = localStorage.setItem("fullName", matchedUser.fullName);
   } else {
@@ -108,7 +108,12 @@ function registerErrorEvent() {
 
 // Arahkan jika  login berhasil ke sini
 function registerSuccessEvent() {
-  window.location.href = "profile.html";
+  window.location.href = "homeHasLogin.html";
+}
+
+// Jika sudah login boleh ikut event
+function eventHasLogin() {
+  window.location.href = "eventHasLogin.html";
 }
 
 // Menampilkan nama lengkap pengguna
