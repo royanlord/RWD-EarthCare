@@ -19,6 +19,7 @@ header nav .logo-nav {
 .navbar-brand {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: -0.5rem;
 }
 
 header .dropdown-menu {
