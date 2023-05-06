@@ -48,7 +48,7 @@ navbar .btn-login:active {
 
 /* user profile display after login */
 #user-profile {
-  background-color: #E54201;
+  background-color: #e54201;
   padding: 0.6rem 0.8rem;
 }
 
@@ -271,15 +271,15 @@ footer > .container-fluid {
 
   footer {
     height: auto;
-}
+  }
 
-footer h5 {
+  footer h5 {
     font-size: 1rem;
-}
+  }
 
-footer .fs-6 {
+  footer .fs-6 {
     font-size: 1.5rem;
-}
+  }
 }
 
 @media screen and (max-width: 576px) {
