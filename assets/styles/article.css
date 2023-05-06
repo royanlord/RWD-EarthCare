@@ -118,6 +118,10 @@ header .bg-dark, .dropdown-menu {
     margin-top: 7.5rem;
 }
 
+#detail-atc {
+    padding-top: 0.2rem;
+}
+
 #article p {
     text-align: justify;
 }
