@@ -11,6 +11,7 @@ html {
 
 header .bg-dark {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 1rem;
 }
 
 header .dropdown-menu {
@@ -24,8 +25,13 @@ header .bg-dark,
   background-color: #115810 !important;
 }
 
-header .logo-nav {
+header nav .logo-nav {
   margin-top: -1rem;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .navbar-brand {
@@ -101,7 +107,7 @@ header .logo-nav {
   font-size: 1.6rem !important;
 }
 
-#user-name {
+#profileUserNavbar {
   width: 48% !important;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -164,7 +170,7 @@ footer > .container-fluid {
 }
 
 @media screen and (max-width: 992px) {
-  #user-name {
+  #profileUserNavbar {
     width: auto !important;
   }
 

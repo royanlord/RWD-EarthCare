@@ -48,7 +48,7 @@ navbar .btn-login:active {
 
 /* user profile display after login */
 #user-profile {
-  background-color: #E54201;
+  background-color: #e54201;
   padding: 0.6rem 0.8rem;
 }
 
@@ -56,7 +56,7 @@ navbar .btn-login:active {
   font-size: 1.6rem !important;
 }
 
-#user-name {
+#profileUserNavbar {
   width: 48% !important;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -265,21 +265,21 @@ footer > .container-fluid {
 
 /* Styling Responsive Detail Event Page */
 @media screen and (max-width: 992px) {
-  #user-name {
+  #profileUserNavbar {
     width: auto !important;
   }
 
   footer {
     height: auto;
-}
+  }
 
-footer h5 {
+  footer h5 {
     font-size: 1rem;
-}
+  }
 
-footer .fs-6 {
+  footer .fs-6 {
     font-size: 1.5rem;
-}
+  }
 }
 
 @media screen and (max-width: 576px) {
