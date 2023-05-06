@@ -35,4 +35,4 @@ setTimeout(() => {
         .catch(err => {
             console.log(err)
         })
-}, 2600)
+}, 2000)
