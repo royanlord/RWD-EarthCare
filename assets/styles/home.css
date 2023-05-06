@@ -5,6 +5,9 @@
 
 header .bg-dark {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  border: none !important;
 }
 
 .navbar-brand {
@@ -26,6 +29,8 @@ header nav .logo-nav {
 header .bg-dark,
 .dropdown-menu {
   background-color: #115810 !important;
+  border: none !important;
+  background: #094508;
 }
 
 header .dropdown-menu {
