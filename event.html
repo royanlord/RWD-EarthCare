@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Loading...</title>
+
+     <!-- FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+     <!-- FAVICON -->
+     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+     <!-- ICON -->
+     <script src="https://kit.fontawesome.com/71c2ab2c83.js" crossorigin="anonymous"></script>
+
+     <!-- CSS CDN BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="assets/styles/event.css">
+
+</head>
+
+<body>
+     <!-- Start: Navbar -->
+     <header id="header" class="d-none">
+          <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+               <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                         <img src="assets/images/logo-nav.png" class="logo-img" alt="">EarthCare
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown"
+                         aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navDropdown">
+                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center text-center">
+                              <li class="nav-item">
+                                   <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                   <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Content
+                                   </a>
+                                   <ul class="dropdown-menu slideIn animate dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Event</a></li>
+                                        <li>
+                                             <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="article.html">Article</a></li>
+                                   </ul>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="about.html">About</a>
+                              </li>
+                              <li class="nav-item me-lg-4">
+                                   <a class="nav-link" href="contact.html">Contact Us</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="login.html">
+                                        <button class="btn btn-primary px-3 border-0" type="submit">Login</button>
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+     </header>
+     <!-- Start: Navbar -->
+
+     <!-- Start: Card Event -->
+     <div class="container" id="loading">
+          <div class="row d-flex justify-content-center">
+               <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_pvjwvcvn.json" background="transparent"
+                    speed="1.5" style="width: 550px; height: 550px;" loop autoplay></lottie-player>
+          </div>
+     </div>
+
+     <main id="event" class="d-none">
+          <div class="container text-event">
+               <h2 class="text-center fw-bold">Event Terbaru, Yuk Ikutan!</h2>
+               <p class="text-center mb-3">
+                    Daftarkan diri anda untuk mendapatkan pengalaman baru
+               </p>
+               <hr>
+          </div>
+
+          <div id="output" class="container mb-5">
+          </div>
+          </div>
+     </main>
+     <!-- End: Card Event -->
+
+     <!-- Start: Footer -->
+     <footer id="footer" class="d-none">
+          <div class="container-fluid mt-4">
+               <div class="row py-lg-5 py-4 mx-lg-4 text-white d-flex justify-content-center">
+                    <div class="col-lg-3 pt-sm-0 pt-md-0 pt-lg-4">
+                         <h4 class="fw-semibold text-white">
+                              <img src="assets/images/logo-nav.png" alt="logo navbar" height="45">
+                              EarthCare
+                         </h4>
+                         <p class="mt-3 text-wrap">&copy; Copyright 2023 all rights reserved</p>
+                    </div>
+                    <div class="col-lg-2 pt-lg-4">
+                         <ul class="ps-0">
+                              <h5 class="fw-semibold">Content</h5>
+                              <li class="fs-6 fw-light">Event</li>
+                              <li class="fs-6 fw-light">Article</li>
+                         </ul>
+                    </div>
+                    <div class="col-lg-2 pt-lg-4">
+                         <ul class="ps-0">
+                              <h5 class="fw-semibold">About Us</h5>
+                              <li class="fs-6 fw-light">About</li>
+                              <li class="fs-6 fw-light">Our Team</li>
+                         </ul>
+                    </div>
+                    <div class="col-lg-3 pt-lg-4">
+                         <h5 class="fw-semibold text-center text-lg-start">Connect with us</h5>
+                         <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                              <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                                   <i class="fa-brands fa-instagram fa-xl"></i>
+                              </a>
+                              <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                                   <i class="fa-brands fa-twitter fa-xl"></i>
+                              </a>
+                              <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                                   <i class="fa-brands fa-youtube fa-xl"></i>
+                              </a>
+                              <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+                                   <i class="fa-brands fa-facebook fa-xl"></i>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     <!-- End: Footer -->
+
+     <!-- JS CDN BOOTSTRAP -->
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+          crossorigin="anonymous"></script>
+
+     <!-- Javascript -->
+     <script src="assets/js/event.js"></script>
+     <script src="assets/js/authentication.js"></script>
+     <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

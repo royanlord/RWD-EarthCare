@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+  <!-- CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/styles/home.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/71c2ab2c83.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Start: Navbar -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="#">
+          <img src="assets/images/logo-nav.png" class="logo-nav" alt="logo navbar" height="50">
+          EarthCare
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav text-center ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Content
+              </a>
+              <ul class="dropdown-menu animate slideIn dropdown-menu-dark">
+                <li><a class="dropdown-item" href="eventHasLogin.html">Event</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="aboutHasLogin.html">Article</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="aboutHasLogin.html">About</a>
+            </li>
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="contactHasLogin.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle d-flex align-items-center justify-content-center" href="#"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div id="user-profile" class="rounded-pill me-2">
+                  <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                </div>
+                <div class="my-auto" id="profileUserNavbar">
+                </div>
+              </a>
+              <ul class="dropdown-menu animate slideIn dropdown-menu-dark ms-lg-5 mx-5">
+                <li><a class="dropdown-item text-lg-start text-center" id="logout" href="index.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End: Navbar -->
+
+  <main>
+    <!-- Start: Carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner position-relative">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/images/carousel-image1.png" class="d-block w-100" alt="menanam pohon" />
+          <div
+            class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100 text-white d-flex justify-content-center align-items-center">
+            <div class="text-center wrapper-carousel">
+              <h1 class="fw-bold text-wrap">
+                Menanam Pohon
+                Selamatkan Kehidupan
+              </h1>
+              <p class="text-wrap">
+                Gerakan menanam pohon sebagai upaya melakukan penghijauan dan memperbaiki paru-paru kota
+              </p>
+              <button class="btn btn-carousel" onclick="eventHasLogin()">Join Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/images/carousel-image2.png" class="d-block w-100" alt="menanam pohon" />
+          <div
+            class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100 text-white d-flex justify-content-center align-items-center">
+            <div class="text-center wrapper-carousel">
+              <h1 class="fw-bold">
+                Menanam Pohon <br />
+                Selamatkan Kehidupan
+              </h1>
+              <p class="text-wrap">
+                Gerakan menanam pohon sebagai upaya melakukan penghijauandan memperbaiki paru-paru kota
+              </p>
+              <button class="btn btn-carousel" onclick="eventHasLogin()">Join Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/carousel-image3.png" class="d-block w-100" alt="menanam pohon" />
+          <div
+            class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100 text-white d-flex justify-content-center align-items-center">
+            <div class="text-center wrapper-carousel">
+              <h1 class="fw-bold">
+                Menanam Pohon <br />
+                Selamatkan Kehidupan
+              </h1>
+              <p class="text-wrap">
+                Gerakan menanam pohon sebagai upaya melakukan penghijauan dan memperbaiki paru-paru kota
+              </p>
+              <button class="btn btn-carousel" onclick="eventHasLogin()">Join Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev d-md-block" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next d-md-block" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End: Carousel -->
+
+    <!-- Start: Event -->
+    <section>
+      <div class="container mt-5">
+        <h2 class="text-center fw-bold">Event Terbaru, Yuk Ikutan!</h2>
+        <p class="text-center text-black-50">
+          Daftarkan diri anda untuk mendapatkan pengalaman baru
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="fitur-event text-center">
+        <div class="wrapper-event d-flex justify-content-center gap-4 flex-wrap text-start">
+          <div class="card card-event" style="width: 22rem">
+            <img src="assets/images/event-image1.svg" class="card-img-top" alt="pencegahan banjir" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Strategi Pengelolaan Sungai
+              </h5>
+              <p class="text-black-50">ecoedu</p>
+              <div class="card-text mb-4">
+                <div class="date mb-2">
+                  <i class="fa-solid fa-calendar-days fa-lg"></i>
+                  <p class="d-inline text-muted ms-1">14 Mei 2023</p>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot fa-lg"></i>
+                  <p class="d-inline text-muted ms-1">Online, zoom</p>
+                </div>
+              </div>
+              <a href="eventHasLogin.html" class="btn btn-event w-100">Join Now</a>
+            </div>
+          </div>
+          <div class="card card-event" style="width: 22rem">
+            <img src="assets/images/event-image2.svg" class="card-img-top"
+              alt="peran mahasiswa melestarikan lingkungan" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Gerakan Sedekah Sampah
+              </h5>
+              <p class="text-black-50">tkn_psl</p>
+              <div class="card-text mb-4">
+                <div class="date mb-2">
+                  <i class="fa-solid fa-calendar-days fa-lg"></i>
+                  <p class="d-inline text-muted ms-1">8 April 2023</p>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot fa-lg"></i>
+                  <p class="d-inline text-muted ms-1">Halaman Masjid Raya Bintaro Jaya</p>
+                </div>
+              </div>
+              <a href="eventHasLogin.html" class="btn btn-event w-100">Join Now</a>
+            </div>
+          </div>
+          <div class="card card-event" style="width: 22rem">
+            <img src="assets/images/event-image2.svg" class="card-img-top" alt="daur ulang sampah plastik" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Perhitungan Gas Rumah Kaca
+              </h5>
+              <p class="text-black-50">ecoedu</p>
+              <div class="card-text mb-4">
+                <div class="date mb-2">
+                  <i class="fa-solid fa-calendar-days fa-lg"></i>
+                  <p class="d-inline text-muted ms-1">16 Maret 2023</p>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot fa-lg"></i>
+                  <p class="d-inline text-muted ms-1">Online, zoom</p>
+                </div>
+              </div>
+              <a href="detail-eventHasLogin.html" class="btn btn-event w-100">Join Now</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn my-5 btn-showall-event" onclick="window.location.href='eventHasLogin.html'">
+          Show All Event
+        </button>
+      </div>
+    </section>
+    <!-- End: Event -->
+
+    <!-- Start: Article -->
+    <section>
+      <div class="fitur-article bg-success">
+        <div class="wrapper-article">
+          <div class="container">
+            <h2 class="text-center fw-bold">Rekomendasi Artikel</h2>
+            <p class="text-center text-white-50 mb-5">
+              Beberapa rekomendasi artikel dari kami yang mungkin anda suka
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card mb-3 left-article border-0">
+                  <img src="assets/images/article-image1.svg" class="card-img-top" alt="kebakaran hutan" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Penyebab Terjadinya Kebakaran Hutan dan Cara Mencegahnya
+                    </h5>
+                    <p class="card-text">
+                      Kebakaran hutan seringkali terjadi secara alami di daerah vegetasi kering. Kebakaran hutan disebut
+                      sebagai kebakaran semak atau kebakaran gurun tergantung pada area di mana hal ini terjadi.
+                      Kebakaran hutan ialah terbakarnya sesuatu yang menimbulkan bahaya atau mendatangkan bencana...
+                    </p>
+                    <div class="text-center btn-article">
+                      <a href="articleHasLogin.html" class="btn w-50">Read</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="row">
+                  <div class="col mid-article">
+                    <div class="card mb-3 right-article border-0">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="assets/images/article-image2.svg" class="img-fluid rounded-start"
+                            alt="sampah menyebabkan banjir">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Menumpuknya Sampah di Sungai Menjadi Penyebab Utama Banjir</h5>
+                            <p class="card-text">Bencana banjir yang terjadi disebabkan oleh curah hujan yang tinggi dan
+                              ulah warga setempat yang membuang sampah ke sungai sehingga menyebabkan airnya sungai
+                              meluap ke pemukiman warga. Membuang sampah sembarangan di sungai memberikan dampak...</p>
+                            <div class="text-center btn-article">
+                              <a href="articleHasLogin.html" class="btn w-50">Read</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg">
+                    <div class="card mb-3 right-article border-0">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="assets/images/article-image3.svg" class="img-fluid rounded-start"
+                            alt="polusi udara dari pabrik">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Polusi Udara Serta Dampaknya Bagi Manusia dan Lingkungan</h5>
+                            <p class="card-text">Polusi udara menjadi bahaya yang mengancam kesehatan manusia. Kita bisa
+                              dengan mudah mengetahui adanya polusi dengan udara yang berwarna atau berbau. Polusi udara
+                              banyak ditemukan di daerah perkotaan. Menurut data...</p>
+                            <div class="text-center btn-article">
+                              <a href="articleHasLogin.html" class="btn w-50">Read</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center my-5">
+              <button type="button" class="btn btn-showall-article"
+                onclick="window.location.href='articleHasLogin.html'">
+                Show All Articles
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End: Article -->
+
+    <!-- Start: About Us -->
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/images/about us.svg" class="img-fluid" alt="ilustrasi peduli bumi">
+          </div>
+          <div class="col-lg-6">
+            <p class="fs-3 fw-bold title">About Us</p>
+            <p>EarthCare adalah suatu platform aplikasi berbasis website yang berfokus pada kepedulian dan kelestarian
+              alam dimana pada mulanya terbentuk karena didasari atas rasa prihatin terhadap Bumi yang kian rapuh.
+              Greenpeace sebagai wadah dan tempat untuk mengedukasi dan mengajak masyarakat banyak agar lebih peduli
+              terhadap kelestarian alam dan juga turut serta untuk menjaganya.
+            </p>
+            <p>Memberi Solusi. Gerakkan Aksi. Ciptakan Perubahan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content-form">
+      <div class="container-fluid mx-auto mt-5 pt-5 pb-5 rounded-5">
+        <div class="row my-5">
+          <div class="col-lg-6 col-md-12 px-5 text-center text-lg-start">
+            <h5 class="text-white fw-medium">Questions, Comments, Concerns?</h5>
+            <h1 class="text-white fw-medium display-3">We&rsquo;d love to <span id="hear">hear</span> from you!</h1>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <form name="contact-form" class="contact-form text-white pe-lg-5">
+              <div class="mb-2">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg" id="email" placeholder="Masukkan email">
+                <div class="mt-1 text-warning" id="invalid-email"></div>
+              </div>
+              <div class="mb-2">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control form-control-lg" id="fullname"
+                  placeholder="Masukkan nama lengkap">
+                <div class="mt-1 text-warning" id="invalid-fullname"></div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control form-control-lg" id="message" rows="6" style="resize: none;"
+                  placeholder="Tulis pertanyaan"></textarea>
+                <div class="mt-1 text-warning" id="invalid-message"></div>
+              </div>
+              <div class="mb-3">
+                <button type="submit" id="btnSend" class="btn btn-lg w-100 btn-primary border-0">Send Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: About Us -->
+  </main>
+
+  <!-- Start: Footer -->
+  <footer id="footer">
+    <div class="container-fluid mt-4">
+      <div class="row py-lg-5 py-4 mx-lg-4 text-white d-flex justify-content-center">
+        <div class="col-lg-3 pt-sm-0 pt-md-0 pt-lg-4">
+          <h4 class="fw-semibold text-white">
+            <img src="assets/images/logo-nav.png" alt="logo navbar" height="45">
+            EarthCare
+          </h4>
+          <p class="mt-3 text-wrap">&copy; Copyright 2023 all rights reserved</p>
+        </div>
+        <div class="col-lg-2 pt-lg-4">
+          <ul class="ps-0">
+            <h5 class="fw-semibold">Content</h5>
+            <li class="fs-6 fw-light">Event</li>
+            <li class="fs-6 fw-light">Article</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 pt-lg-4">
+          <ul class="ps-0">
+            <h5 class="fw-semibold">About Us</h5>
+            <li class="fs-6 fw-light">About</li>
+            <li class="fs-6 fw-light">Our Team</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 pt-lg-4">
+          <h5 class="fw-semibold text-center text-lg-start">Connect with us</h5>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+            <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+              <i class="fa-brands fa-twitter fa-xl"></i>
+            </a>
+            <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+              <i class="fa-brands fa-youtube fa-xl"></i>
+            </a>
+            <a href="#" class="text-white link-offset-2 link-underline link-underline-opacity-0">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End: Footer -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
+  <!-- JS BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- Javascript -->
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/authentication.js"></script>
+  <script src="assets/js/profile.js"></script>
+</body>
+
+</html>
